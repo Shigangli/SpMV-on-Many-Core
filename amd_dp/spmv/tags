@@ -1,0 +1,86 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BCCOO	class.hpp	/^struct BCCOO{$/;"	s
+BINDIR	Makefile	/^BINDIR       ?= $(OCLBINDIR)\/linux\/release$/;"	m
+CLBCCOO	class.hpp	/^struct CLBCCOO{$/;"	s
+ESTIMATE	class.hpp	6;"	d
+INCDIR	Makefile	/^INCDIR	     ?= .$/;"	m
+LIBDIR	Makefile	/^LIBDIR     := $(ROOTDIR)\/shared\/lib$/;"	m
+LINK	Makefile	/^LINK = g++  -g $/;"	m
+MAX_LEVELS	class.hpp	2;"	d
+MAX_WORKGROUP_SIZE	class.hpp	5;"	d
+MTX	class.hpp	/^struct MTX{$/;"	s
+OCLBINDIR	Makefile	/^OCLBINDIR    ?= $(OCLROOTDIR)\/bin$/;"	m
+OCLCOMMONDIR	Makefile	/^OCLCOMMONDIR ?= $(OCLROOTDIR)\/common$/;"	m
+OCLLIBDIR	Makefile	/^OCLLIBDIR    := -L$(OCLCOMMONDIR)\/lib -L$(LIBDIR) -lOpenCL$/;"	m
+OCLROOTDIR	Makefile	/^OCLROOTDIR := $(ROOTDIR)\/OpenCL$/;"	m
+ROOTDIR	Makefile	/^ROOTDIR    := .\/NVIDIA_GPU_Computing_SDK$/;"	m
+SHAREDDIR	Makefile	/^SHAREDDIR  := $(ROOTDIR)\/shared$/;"	m
+SH_MEM_SIZE	class.hpp	4;"	d
+SRCS	Makefile	/^SRCS = ..\/init.cpp test.cpp $/;"	m
+TARGET	Makefile	/^TARGET = test$/;"	m
+TEXTURE_WIDTH	class.hpp	1;"	d
+TIMES	class.hpp	3;"	d
+bit	class.hpp	/^    bitType *bit;$/;"	m	struct:BCCOO
+bit	class.hpp	/^    cl_mem bit;$/;"	m	struct:CLBCCOO
+block_height	class.hpp	/^    int block_height;$/;"	m	struct:BCCOO
+block_height	class.hpp	/^    int block_height;$/;"	m	struct:CLBCCOO
+block_number	class.hpp	/^    int block_number;$/;"	m	struct:BCCOO
+block_number	class.hpp	/^    int block_number;$/;"	m	struct:CLBCCOO
+block_width	class.hpp	/^    int block_width;$/;"	m	struct:BCCOO
+block_width	class.hpp	/^    int block_width;$/;"	m	struct:CLBCCOO
+check	cpu_spmv.hpp	/^void check(dataType *cres,dataType *res,int len)$/;"	f
+col	class.hpp	/^    cl_mem col;$/;"	m	struct:CLBCCOO
+col	class.hpp	/^    dimType *col;$/;"	m	struct:BCCOO
+col	class.hpp	/^    int *col;$/;"	m	struct:MTX
+col_delta	class.hpp	/^    cl_mem col_delta;$/;"	m	struct:CLBCCOO
+cols	class.hpp	/^    int cols;$/;"	m	struct:BCCOO
+cols	class.hpp	/^    int cols;$/;"	m	struct:CLBCCOO
+cols	class.hpp	/^    int cols;$/;"	m	struct:MTX
+cpu_spmv	cpu_spmv.hpp	/^void cpu_spmv(MTX<dataType> *mtx,dataType *vec,dataType *res)$/;"	f
+data	class.hpp	/^    cl_mem data;$/;"	m	struct:CLBCCOO
+data	class.hpp	/^    dataType *data;$/;"	m	struct:BCCOO
+data	class.hpp	/^    dataType* data;$/;"	m	struct:MTX
+data1	class.hpp	/^    cl_mem data1;$/;"	m	struct:CLBCCOO
+data2	class.hpp	/^    cl_mem data2;$/;"	m	struct:CLBCCOO
+data3	class.hpp	/^    cl_mem data3;$/;"	m	struct:CLBCCOO
+fileToMtx	mtx.hpp	/^void fileToMtx(char* filename,MTX<dataType> *mtx)$/;"	f
+footPrintSort	spmv.hpp	/^void footPrintSort(int block_size[12][3],MTX<dataType> *mtx)$/;"	f
+generateProgramCache	spmv.hpp	/^void generateProgramCache(clContext *clCxt)$/;"	f
+getBlock	bccoo.hpp	/^int getBlock(MTX<dataType> *mtx,int l, int block_width, dataType *dst)$/;"	f
+getBlockNumber	bccoo.hpp	/^int getBlockNumber(int *row,int *col,int cols,int nnz,int block_width,int block_height)$/;"	f
+getBlockRow	bccoo.hpp	/^int getBlockRow(MTX<dataType> *mtx,int slice_rows,BCCOO<dataType,dimType,bitType> *bccoo,$/;"	f
+getPlan	spmv.hpp	/^void getPlan(clContext *clCxt,BCCOO<dataType,dimType,bitType> *bccoo,Plan *best,dataType *cres)$/;"	f
+getResEntryCpu	bccoo.hpp	/^void getResEntryCpu(BCCOO<dataType,dimType,bitType> *bccoo,int *res_entry,$/;"	f
+getResEntryGpu	spmv.hpp	/^void getResEntryGpu(clContext *clCxt,cl_mem &gbit,cl_mem &res_dev_entry,$/;"	f
+getTexture	spmv.hpp	/^void getTexture(clContext *clCxt,cl_mem &vec_dev, dataType *vec, int vec_size,$/;"	f
+if_sorted_coo	mtx.hpp	/^bool if_sorted_coo(MTX<dataType>* mtx)$/;"	f
+inter	class.hpp	/^    cl_mem inter;$/;"	m	struct:CLBCCOO
+main	test.cpp	/^int main(int argc, char* argv[]){$/;"	f
+max_block_per_row	class.hpp	/^    int max_block_per_row;$/;"	m	struct:BCCOO
+max_block_per_row	class.hpp	/^    int max_block_per_row;$/;"	m	struct:CLBCCOO
+nnz	class.hpp	/^    int nnz;$/;"	m	struct:BCCOO
+nnz	class.hpp	/^    int nnz;$/;"	m	struct:CLBCCOO
+nnz	class.hpp	/^    int nnz;$/;"	m	struct:MTX
+para_scan	class.hpp	/^    cl_mem para_scan;$/;"	m	struct:CLBCCOO
+printBCCOO	bccoo.hpp	/^void printBCCOO(BCCOO<dataType,dimType,bitType> *bccoo)$/;"	f
+printMtx	mtx.hpp	/^void printMtx(MTX<dataType> *mtx)$/;"	f
+res_entry	class.hpp	/^    cl_mem res_entry;$/;"	m	struct:CLBCCOO
+row	class.hpp	/^    int *row;$/;"	m	struct:MTX
+rows	class.hpp	/^    int rows;$/;"	m	struct:BCCOO
+rows	class.hpp	/^    int rows;$/;"	m	struct:CLBCCOO
+rows	class.hpp	/^    int rows;$/;"	m	struct:MTX
+slice_rows	class.hpp	/^    int slice_rows;$/;"	m	struct:BCCOO
+slice_rows	class.hpp	/^    int slice_rows;$/;"	m	struct:CLBCCOO
+slices	class.hpp	/^    int slices;$/;"	m	struct:BCCOO
+slices	class.hpp	/^    int slices;$/;"	m	struct:CLBCCOO
+sort_coo	mtx.hpp	/^bool sort_coo(MTX<dataType>* mtx)$/;"	f
+transpose	spmv.hpp	/^void transpose(clContext *clCxt,cl_mem &gdst, cl_mem &gsrc,int src_data_size,$/;"	f
+yaSpMVRun	spmv.hpp	/^void yaSpMVRun(clContext *clCxt,CLBCCOO *clbccoo,cl_mem vec_dev,cl_mem res_dev,Plan *plan,int times=1,int record=0)$/;"	f
+yaSpMVbccoo2clbccoo	spmv.hpp	/^void yaSpMVbccoo2clbccoo(clContext *clCxt,BCCOO<dataType,dimType,bitType> *bccoo,CLBCCOO *clbccoo,Plan *plan)$/;"	f
+yaSpMVmtx2bccoo	bccoo.hpp	/^int yaSpMVmtx2bccoo(MTX<dataType> *mtx,int block_width,int block_height,int workgroup_size,$/;"	f
+yaSpMVmtx2clbccoo	spmv.hpp	/^void yaSpMVmtx2clbccoo(clContext *clCxt,MTX<dataType> *mtx,CLBCCOO *clbccoo,Plan *best,int tune=1){$/;"	f

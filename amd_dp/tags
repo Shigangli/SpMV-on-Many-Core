@@ -1,0 +1,131 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BCCOO	spmv/class.hpp	/^struct BCCOO{$/;"	s
+BINDIR	spmv/Makefile	/^BINDIR       ?= $(OCLBINDIR)\/linux\/release$/;"	m
+CLBCCOO	spmv/class.hpp	/^struct CLBCCOO{$/;"	s
+ESTIMATE	spmv/class.hpp	6;"	d
+INCDIR	spmv/Makefile	/^INCDIR	     ?= .$/;"	m
+LIBDIR	spmv/Makefile	/^LIBDIR     := $(ROOTDIR)\/shared\/lib$/;"	m
+LINK	spmv/Makefile	/^LINK = g++  -g $/;"	m
+MAX_LEVELS	spmv/class.hpp	2;"	d
+MAX_SOURCE_SIZE	init.hpp	17;"	d
+MAX_WORKGROUP_SIZE	spmv/class.hpp	5;"	d
+MTX	spmv/class.hpp	/^struct MTX{$/;"	s
+OCLBINDIR	spmv/Makefile	/^OCLBINDIR    ?= $(OCLROOTDIR)\/bin$/;"	m
+OCLCOMMONDIR	spmv/Makefile	/^OCLCOMMONDIR ?= $(OCLROOTDIR)\/common$/;"	m
+OCLLIBDIR	spmv/Makefile	/^OCLLIBDIR    := -L$(OCLCOMMONDIR)\/lib -L$(LIBDIR) -lOpenCL$/;"	m
+OCLROOTDIR	spmv/Makefile	/^OCLROOTDIR := $(ROOTDIR)\/OpenCL$/;"	m
+PERF	init.hpp	19;"	d
+Plan	init.hpp	/^typedef struct Plan{$/;"	s
+Plan	init.hpp	/^}Plan;$/;"	t	typeref:struct:Plan
+ROOTDIR	spmv/Makefile	/^ROOTDIR    := .\/NVIDIA_GPU_Computing_SDK$/;"	m
+SHAREDDIR	spmv/Makefile	/^SHAREDDIR  := $(ROOTDIR)\/shared$/;"	m
+SH_MEM_SIZE	spmv/class.hpp	4;"	d
+SRCS	spmv/Makefile	/^SRCS = ..\/init.cpp test.cpp $/;"	m
+TARGET	spmv/Makefile	/^TARGET = test$/;"	m
+TEXTURE_WIDTH	spmv/class.hpp	1;"	d
+TIMES	spmv/class.hpp	3;"	d
+TimeRcd	init.hpp	/^}TimeRcd;$/;"	t	typeref:struct:TimeRecord
+TimeRecord	init.hpp	/^typedef struct TimeRecord{$/;"	s
+bit	spmv/class.hpp	/^    bitType *bit;$/;"	m	struct:BCCOO
+bit	spmv/class.hpp	/^    cl_mem bit;$/;"	m	struct:CLBCCOO
+bitwidth	init.hpp	/^    int bitwidth;$/;"	m	struct:Plan
+block_height	init.hpp	/^    int block_height;$/;"	m	struct:Plan
+block_height	spmv/class.hpp	/^    int block_height;$/;"	m	struct:BCCOO
+block_height	spmv/class.hpp	/^    int block_height;$/;"	m	struct:CLBCCOO
+block_number	spmv/class.hpp	/^    int block_number;$/;"	m	struct:BCCOO
+block_number	spmv/class.hpp	/^    int block_number;$/;"	m	struct:CLBCCOO
+block_width	init.hpp	/^    int block_width;$/;"	m	struct:Plan
+block_width	spmv/class.hpp	/^    int block_width;$/;"	m	struct:BCCOO
+block_width	spmv/class.hpp	/^    int block_width;$/;"	m	struct:CLBCCOO
+check	spmv/cpu_spmv.hpp	/^void check(dataType *cres,dataType *res,int len)$/;"	f
+clContext	init.hpp	/^typedef struct clContext{$/;"	s
+clContext	init.hpp	/^}clContext;$/;"	t	typeref:struct:clContext
+coalesced	init.hpp	/^    int coalesced;$/;"	m	struct:Plan
+col	spmv/class.hpp	/^    cl_mem col;$/;"	m	struct:CLBCCOO
+col	spmv/class.hpp	/^    dimType *col;$/;"	m	struct:BCCOO
+col	spmv/class.hpp	/^    int *col;$/;"	m	struct:MTX
+col_delta	init.hpp	/^    int col_delta;$/;"	m	struct:Plan
+col_delta	spmv/class.hpp	/^    cl_mem col_delta;$/;"	m	struct:CLBCCOO
+cols	spmv/class.hpp	/^    int cols;$/;"	m	struct:BCCOO
+cols	spmv/class.hpp	/^    int cols;$/;"	m	struct:CLBCCOO
+cols	spmv/class.hpp	/^    int cols;$/;"	m	struct:MTX
+command_queue	init.hpp	/^    cl_command_queue command_queue;$/;"	m	struct:clContext
+context	init.hpp	/^    cl_context context;$/;"	m	struct:clContext
+cpu_spmv	spmv/cpu_spmv.hpp	/^void cpu_spmv(MTX<dataType> *mtx,dataType *vec,dataType *res)$/;"	f
+create	init.cpp	/^void create(clContext *clCxt, cl_mem *mem, int len)$/;"	f
+cta	init.hpp	/^    int cta;$/;"	m	struct:Plan
+data	spmv/class.hpp	/^    cl_mem data;$/;"	m	struct:CLBCCOO
+data	spmv/class.hpp	/^    dataType *data;$/;"	m	struct:BCCOO
+data	spmv/class.hpp	/^    dataType* data;$/;"	m	struct:MTX
+data1	spmv/class.hpp	/^    cl_mem data1;$/;"	m	struct:CLBCCOO
+data2	spmv/class.hpp	/^    cl_mem data2;$/;"	m	struct:CLBCCOO
+data3	spmv/class.hpp	/^    cl_mem data3;$/;"	m	struct:CLBCCOO
+device_id	init.hpp	/^    cl_device_id device_id;$/;"	m	struct:clContext
+dimwidth	init.hpp	/^    int dimwidth;$/;"	m	struct:Plan
+download	init.cpp	/^void download(clContext *clCxt,cl_mem &gdata,void *data,int data_len)$/;"	f
+dynamic_task	init.hpp	/^    int dynamic_task;$/;"	m	struct:Plan
+executeKernel	init.cpp	/^void executeKernel(vector<pair<size_t * ,size_t *> > &threads, cl_kernel *kernel,clContext *clCxt,int times,int record)$/;"	f
+fileToMtx	spmv/mtx.hpp	/^void fileToMtx(char* filename,MTX<dataType> *mtx)$/;"	f
+footPrintSort	spmv/spmv.hpp	/^void footPrintSort(int block_size[12][3],MTX<dataType> *mtx)$/;"	f
+generateProgramCache	spmv/spmv.hpp	/^void generateProgramCache(clContext *clCxt)$/;"	f
+getBlock	spmv/bccoo.hpp	/^int getBlock(MTX<dataType> *mtx,int l, int block_width, dataType *dst)$/;"	f
+getBlockNumber	spmv/bccoo.hpp	/^int getBlockNumber(int *row,int *col,int cols,int nnz,int block_width,int block_height)$/;"	f
+getBlockRow	spmv/bccoo.hpp	/^int getBlockRow(MTX<dataType> *mtx,int slice_rows,BCCOO<dataType,dimType,bitType> *bccoo,$/;"	f
+getClContext	init.cpp	/^void getClContext(clContext *clCxt)$/;"	f
+getKernel	init.cpp	/^cl_kernel getKernel(string source,string kernelName, vector< pair<size_t,const void *> > args,$/;"	f
+getPlan	spmv/spmv.hpp	/^void getPlan(clContext *clCxt,BCCOO<dataType,dimType,bitType> *bccoo,Plan *best,dataType *cres)$/;"	f
+getProgram	init.cpp	/^cl_program getProgram(string source,char * build_options,clContext *clCxt)$/;"	f
+getResEntryCpu	spmv/bccoo.hpp	/^void getResEntryCpu(BCCOO<dataType,dimType,bitType> *bccoo,int *res_entry,$/;"	f
+getResEntryGpu	spmv/spmv.hpp	/^void getResEntryGpu(clContext *clCxt,cl_mem &gbit,cl_mem &res_dev_entry,$/;"	f
+getTexture	spmv/spmv.hpp	/^void getTexture(clContext *clCxt,cl_mem &vec_dev, dataType *vec, int vec_size,$/;"	f
+if_sorted_coo	spmv/mtx.hpp	/^bool if_sorted_coo(MTX<dataType>* mtx)$/;"	f
+inter	spmv/class.hpp	/^    cl_mem inter;$/;"	m	struct:CLBCCOO
+kerneltime	init.hpp	/^   cl_long kerneltime,totaltime;$/;"	m	struct:TimeRecord
+localmemgroup	init.hpp	/^    int localmemgroup;$/;"	m	struct:Plan
+localthread	init.hpp	/^    int localthread;$/;"	m	struct:Plan
+main	spmv/test.cpp	/^int main(int argc, char* argv[]){$/;"	f
+max_block_per_row	spmv/class.hpp	/^    int max_block_per_row;$/;"	m	struct:BCCOO
+max_block_per_row	spmv/class.hpp	/^    int max_block_per_row;$/;"	m	struct:CLBCCOO
+min_cputime	init.hpp	/^   cl_long min_cputime;$/;"	m	struct:TimeRecord
+min_kerneltime	init.hpp	/^   cl_long min_kerneltime, min_totaltime;$/;"	m	struct:TimeRecord
+min_totaltime	init.hpp	/^   cl_long min_kerneltime, min_totaltime;$/;"	m	struct:TimeRecord
+nnz	spmv/class.hpp	/^    int nnz;$/;"	m	struct:BCCOO
+nnz	spmv/class.hpp	/^    int nnz;$/;"	m	struct:CLBCCOO
+nnz	spmv/class.hpp	/^    int nnz;$/;"	m	struct:MTX
+num_devices	init.hpp	/^    cl_uint num_devices;$/;"	m	struct:clContext
+num_platforms	init.hpp	/^    cl_uint num_platforms;$/;"	m	struct:clContext
+para_scan	spmv/class.hpp	/^    cl_mem para_scan;$/;"	m	struct:CLBCCOO
+platform_id	init.hpp	/^    cl_platform_id platform_id;$/;"	m	struct:clContext
+printBCCOO	spmv/bccoo.hpp	/^void printBCCOO(BCCOO<dataType,dimType,bitType> *bccoo)$/;"	f
+printMtx	spmv/mtx.hpp	/^void printMtx(MTX<dataType> *mtx)$/;"	f
+program	init.hpp	/^    vector< pair<string,cl_program *> > program;   $/;"	m	struct:clContext
+registergroup	init.hpp	/^    int registergroup;$/;"	m	struct:Plan
+releaseContext	init.cpp	/^void releaseContext(clContext *clCxt)$/;"	f
+res_entry	spmv/class.hpp	/^    cl_mem res_entry;$/;"	m	struct:CLBCCOO
+row	spmv/class.hpp	/^    int *row;$/;"	m	struct:MTX
+rows	spmv/class.hpp	/^    int rows;$/;"	m	struct:BCCOO
+rows	spmv/class.hpp	/^    int rows;$/;"	m	struct:CLBCCOO
+rows	spmv/class.hpp	/^    int rows;$/;"	m	struct:MTX
+savebinary	init.cpp	/^int savebinary(cl_program &program, const char *fileName)$/;"	f
+slice_rows	spmv/class.hpp	/^    int slice_rows;$/;"	m	struct:BCCOO
+slice_rows	spmv/class.hpp	/^    int slice_rows;$/;"	m	struct:CLBCCOO
+slices	init.hpp	/^    int slices;$/;"	m	struct:Plan
+slices	spmv/class.hpp	/^    int slices;$/;"	m	struct:BCCOO
+slices	spmv/class.hpp	/^    int slices;$/;"	m	struct:CLBCCOO
+sort_coo	spmv/mtx.hpp	/^bool sort_coo(MTX<dataType>* mtx)$/;"	f
+timeRcd	init.cpp	/^TimeRcd timeRcd;$/;"	v
+totaltime	init.hpp	/^   cl_long kerneltime,totaltime;$/;"	m	struct:TimeRecord
+trans	init.hpp	/^    int trans;$/;"	m	struct:Plan
+transpose	spmv/spmv.hpp	/^void transpose(clContext *clCxt,cl_mem &gdst, cl_mem &gsrc,int src_data_size,$/;"	f
+tx	init.hpp	/^    int tx;$/;"	m	struct:Plan
+upload	init.cpp	/^void upload(clContext *clCxt,void *data,cl_mem &gdata,int datalen)$/;"	f
+workgroup	init.hpp	/^    int workgroup;$/;"	m	struct:Plan
+yaSpMVRun	spmv/spmv.hpp	/^void yaSpMVRun(clContext *clCxt,CLBCCOO *clbccoo,cl_mem vec_dev,cl_mem res_dev,Plan *plan,int times=1,int record=0)$/;"	f
+yaSpMVbccoo2clbccoo	spmv/spmv.hpp	/^void yaSpMVbccoo2clbccoo(clContext *clCxt,BCCOO<dataType,dimType,bitType> *bccoo,CLBCCOO *clbccoo,Plan *plan)$/;"	f
+yaSpMVmtx2bccoo	spmv/bccoo.hpp	/^int yaSpMVmtx2bccoo(MTX<dataType> *mtx,int block_width,int block_height,int workgroup_size,$/;"	f
+yaSpMVmtx2clbccoo	spmv/spmv.hpp	/^void yaSpMVmtx2clbccoo(clContext *clCxt,MTX<dataType> *mtx,CLBCCOO *clbccoo,Plan *best,int tune=1){$/;"	f

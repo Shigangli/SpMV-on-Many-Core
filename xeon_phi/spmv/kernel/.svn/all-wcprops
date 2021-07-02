@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/26/trunk/spmv/kernel
+END
+spmv_strategy_a.cl
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/20/trunk/spmv/kernel/spmv_strategy_a.cl
+END
+spmv_strategy_b.cl
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2/trunk/spmv/kernel/spmv_strategy_b.cl
+END
+res_entry.cl
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/26/trunk/spmv/kernel/res_entry.cl
+END
+res_accumulate.cl
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2/trunk/spmv/kernel/res_accumulate.cl
+END
+transpose.cl
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/2/trunk/spmv/kernel/transpose.cl
+END
